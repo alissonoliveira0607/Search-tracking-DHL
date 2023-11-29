@@ -2,9 +2,10 @@
 
 ## Descrição
 
-Este script em Python foi desenvolvido para realizar consultas de rastreamento de remessas utilizando a API da DHL. O usuário pode fornecer um arquivo Excel com a extensão .xlsx contendo o cabeçalho "AWB" e os respectivos números de AWB , e o script retornará as informações de rastreamento associadas a esses números.
+Este script em Python foi desenvolvido para realizar consultas de rastreamento de remessas utilizando a API da DHL. O usuário pode fornecer um arquivo Excel com a extensão .xlsx contendo o cabeçalho "AWB" e os respectivos números de AWB , e o script retornará as informações de rastreamento associadas a esses números. 
 
 ## Dependências
+- Python >= 3.0.0
 
 Certifique-se de ter as bibliotecas listadas no arquivo requirements.txt do Python instaladas:
 
@@ -13,11 +14,11 @@ Você pode instalar as dependências utilizando o seguinte comando:
 pip install -r requirements.txt
 ```
 
-## Urilização
+## Utilização
 
 - Execute o script Python.
 ```bash
-python nome_do_script.py
+python main.py
 ```
 - Selecione o arquivo Excel contendo os números de AWB.
 - Forneça o Site ID do cliente e a senha quando solicitado.
