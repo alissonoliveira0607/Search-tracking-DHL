@@ -117,12 +117,12 @@ if __name__ == "__main__":
 
         input_file = filedialog.askopenfilename(title="Selecione o arquivo de entrada", filetypes=[("Arquivos Excel", "*.xlsx")])
 
-        historico = input("Deseja obter o histórico completo? (S/N): ").upper() == 'S'
+        history = input("Deseja obter o histórico completo? (S/N): ").upper() == 'S'
 
         app = Tracking()
 
-        output_file = f'{app.formatted_date}_results{"_historico" if historico else ""}.xlsx'
+        output_file = f'{app.formatted_date}_results{"_historico" if history else ""}.xlsx'
 
-        app.get_tracking_and_generate_report(input_file, output_file, historico)
+        app.get_tracking_and_generate_report(input_file, output_file, history)
     except Exception as e:
         print(f'Erro durante a execução do programa: {e}')
